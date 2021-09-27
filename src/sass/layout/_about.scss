@@ -1,0 +1,38 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #fbfbfb;
+
+  height: 435px;
+  padding-top: 30px;
+  padding-right: 70px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+.about-images {
+  padding-left: 70px;
+}
+
+.about-image-first {
+  position: relative;
+  bottom: 80px;
+}
+
+.about-image-second {
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+
+.about-image-third {
+  position: relative;
+  bottom: 50px;
+}
+
+.about-text {
+  width: 370px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

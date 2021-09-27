@@ -1,0 +1,89 @@
+.footer {
+  background-color: #2c2c2c;
+}
+
+.footer-container {
+  display: flex;
+  padding-top: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.footer-logo {
+  width: 145px;
+  height: 94px;
+  margin-right: 100px;
+}
+
+.footer-information:not(:last-child) {
+  padding-right: 157px;
+}
+
+.footer-link {
+  color: #ffffff;
+}
+
+.footer-title {
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: row;
+
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+
+  padding-bottom: 15px;
+}
+
+.footer-item:last-child {
+  padding-bottom: 0;
+}
+
+.contact-item {
+  display: flex;
+  padding-bottom: 15px;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: row;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+
+  padding-left: 15px;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-item {
+  padding-right: 40px;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #d8d8d8;
+  margin-top: 60px;
+}
+
+.rights {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: center;
+  padding: 22px 0 24px 0;
+
+  color: #c8c8c880;
+}

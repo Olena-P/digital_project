@@ -1,0 +1,71 @@
+.connection-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* ---------------form----------- */
+/* Full-width input fields */
+.connection-container {
+  margin-top: 22px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="username"],
+input[type="phone"] {
+  width: 391px;
+  padding: 14px 0 14px 21px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border: none;
+  background: #f3f3f3;
+}
+
+input[type="text"]:focus,
+input[type="username"]:focus,
+input[type="phone"]:focus {
+  background-color: #f3f3f3;
+  outline: none;
+}
+
+.placeinput.massage {
+  height: 147px;
+  background-color: #f3f3f3;
+  width: 391px;
+}
+
+.warning {
+  margin: 20px 20px 20px 40px;
+}
+
+/* ----------- red star-------- */
+.place_holder {
+  /* z-index: 100; */
+  left: 0;
+  cursor: text;
+  position: absolute;
+
+  padding: 14px 0 14px 21px;
+  color: #8d8d8d;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+}
+.placeinput input:invalid + .place_holder {
+  display: inline;
+}
+/*вся проблема в том, если placeholder больше инпута*/
+.placeinput {
+  position: relative;
+  overflow: hidden;
+}
+.place_holder span {
+  color: #ff0000;
+}

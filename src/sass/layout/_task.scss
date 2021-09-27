@@ -1,0 +1,30 @@
+.task-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.task-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.task-number {
+  font-family: "Anton", sans-serif;
+  font-weight: 900;
+  font-size: 200px;
+  line-height: 239px;
+  display: flex;
+  align-items: center;
+  color: #f2f2f2;
+  margin-right: 30px;
+}
+
+.task-description {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 36px;
+  color: #333333;
+}

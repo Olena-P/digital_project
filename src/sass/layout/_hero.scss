@@ -1,0 +1,63 @@
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hero-nav {
+  align-self: flex-end;
+  margin-bottom: 105px;
+}
+
+.hero-project {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-title {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 64px;
+  color: #333333;
+  padding-bottom: 90px;
+}
+.project-title .top {
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+  color: #bdbdbd;
+}
+
+.pagination {
+  padding-bottom: 90px;
+}
+
+.arrow-btn {
+  width: 53px;
+  height: 53px;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  margin-right: 23px;
+}
+
+.arrow-btn:hover,
+.arrow-btn:focus {
+  background: #f9f9f9;
+}
+
+.project-number {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: #bdbdbd;
+}
+
+.hero-btn {
+  position: absolute;
+  align-self: flex-end;
+}
