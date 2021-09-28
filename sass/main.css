@@ -662,8 +662,8 @@ z .project-title .top {
 .bg-animation {
   -webkit-animation: bg-animation 50s ease-in-out infinite;
           animation: bg-animation 50s ease-in-out infinite;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6))), url(../../images/header/sky.jpg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../../images/header/sky.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6))), url(../images/header/sky.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../images/header/sky.jpg);
   background-repeat: no-repeat;
 }
 
