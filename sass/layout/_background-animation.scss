@@ -1,0 +1,36 @@
+.bg-animation {
+  animation: bg-animation 50s ease-in-out infinite;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url(../../images/header/sky.jpg);
+  background-repeat: no-repeat;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-size: 140%;
+    background-position: 50% 50%;
+  }
+  20% {
+    background-size: 150%;
+    background-position: 0 50%;
+  }
+  40% {
+    background-size: 130%;
+    background-position: 20% 80%;
+  }
+  60% {
+    background-size: 160%;
+    background-position: 60% 10%;
+  }
+  80% {
+    background-size: 140%;
+    background-position: 40% 70%;
+  }
+  100% {
+    background-size: 140%;
+    background-position: 50% 50%;
+  }
+}

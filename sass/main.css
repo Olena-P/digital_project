@@ -19,7 +19,7 @@ a {
   text-decoration: none;
 }
 
-header {
+nav {
   margin: 0 100px 0 100px;
 }
 
@@ -29,18 +29,26 @@ section {
 
 .dark-btn {
   background-color: #333333;
-  color: #ffffff;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
   width: 222px;
   height: 71px;
-  opacity: 0.9;
+  opacity: 0.6;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .dark-btn:hover,
 .dark-btn:focus {
   opacity: 1;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .white-btn {
@@ -50,7 +58,7 @@ section {
   cursor: pointer;
   width: 222px;
   height: 71px;
-  opacity: 0.9;
+  opacity: 0.6;
   font-weight: normal;
   font-size: 12px;
   line-height: 12px;
@@ -62,6 +70,9 @@ section {
 .white-btn:hover,
 .white-btn:focus {
   opacity: 1;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /* =============btn toTop================= */
@@ -74,6 +85,7 @@ section {
   border: none;
   outline: none;
   background-color: #8d8d8d;
+  opacity: 0.6;
   font-style: bold;
   color: white;
   cursor: pointer;
@@ -82,8 +94,11 @@ section {
 }
 
 #myBtn:hover {
+  opacity: 1;
   background-color: #555;
-  /* Add a dark-grey background on hover */
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .is-hidden {
@@ -153,15 +168,36 @@ section {
   bottom: 80px;
 }
 
+.about-image-first:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .about-image-second {
   position: relative;
   top: 30px;
   left: 30px;
 }
 
+.about-image-second:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .about-image-third {
   position: relative;
   bottom: 50px;
+}
+
+.about-image-third:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .about-text {
@@ -391,15 +427,19 @@ nav {
   margin-right: 60px;
 }
 
-.link {
-  color: #333333;
-}
-
 .menu-item:hover,
 .menu-item:focus,
 .menu-item:active {
   border-top: 2px solid #333333;
   border-bottom: 2px solid #333333;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.link {
+  color: #333333;
+  font-weight: bold;
+  text-shadow: white 1px 0 10px;
 }
 
 .hero {
@@ -439,7 +479,7 @@ nav {
   padding-bottom: 90px;
 }
 
-.project-title .top {
+z .project-title .top {
   font-weight: 300;
   font-size: 64px;
   line-height: 64px;
@@ -470,6 +510,8 @@ nav {
 .arrow-btn:hover,
 .arrow-btn:focus {
   background: #f9f9f9;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .project-number {
@@ -600,5 +642,82 @@ nav {
   font-size: 22px;
   line-height: 36px;
   color: #333333;
+}
+
+.element-animation {
+  margin: 2rem 0;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.bg-animation {
+  -webkit-animation: bg-animation 50s ease-in-out infinite;
+          animation: bg-animation 50s ease-in-out infinite;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6))), url(../../images/header/sky.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../../images/header/sky.jpg);
+  background-repeat: no-repeat;
+}
+
+@-webkit-keyframes bg-animation {
+  0% {
+    background-size: 140%;
+    background-position: 50% 50%;
+  }
+  20% {
+    background-size: 150%;
+    background-position: 0 50%;
+  }
+  40% {
+    background-size: 130%;
+    background-position: 20% 80%;
+  }
+  60% {
+    background-size: 160%;
+    background-position: 60% 10%;
+  }
+  80% {
+    background-size: 140%;
+    background-position: 40% 70%;
+  }
+  100% {
+    background-size: 140%;
+    background-position: 50% 50%;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-size: 140%;
+    background-position: 50% 50%;
+  }
+  20% {
+    background-size: 150%;
+    background-position: 0 50%;
+  }
+  40% {
+    background-size: 130%;
+    background-position: 20% 80%;
+  }
+  60% {
+    background-size: 160%;
+    background-position: 60% 10%;
+  }
+  80% {
+    background-size: 140%;
+    background-position: 40% 70%;
+  }
+  100% {
+    background-size: 140%;
+    background-position: 50% 50%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

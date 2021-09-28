@@ -20,15 +20,36 @@
   bottom: 80px;
 }
 
+.about-image-first:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
 .about-image-second {
   position: relative;
   top: 30px;
   left: 30px;
 }
 
+.about-image-second:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
 .about-image-third {
   position: relative;
   bottom: 50px;
+}
+
+.about-image-third:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 
 .about-text {

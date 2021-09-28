@@ -19,13 +19,18 @@ nav {
   margin-right: 60px;
 }
 
-.link {
-  color: #333333;
-}
-
 .menu-item:hover,
 .menu-item:focus,
 .menu-item:active {
   border-top: 2px solid #333333;
   border-bottom: 2px solid #333333;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.link {
+  color: #333333;
+  font-weight: bold;
+  text-shadow: white 1px 0 10px;
 }

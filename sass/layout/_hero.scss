@@ -21,7 +21,7 @@
   color: #333333;
   padding-bottom: 90px;
 }
-.project-title .top {
+z .project-title .top {
   font-weight: 300;
   font-size: 64px;
   line-height: 64px;
@@ -47,6 +47,9 @@
 .arrow-btn:hover,
 .arrow-btn:focus {
   background: #f9f9f9;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .project-number {

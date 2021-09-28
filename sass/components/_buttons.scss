@@ -1,17 +1,25 @@
 .dark-btn {
   background-color: #333333;
-  color: #ffffff;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
   width: 222px;
   height: 71px;
-  opacity: 0.9;
+  opacity: 0.6;
+
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .dark-btn:hover,
 .dark-btn:focus {
   opacity: 1;
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
 .white-btn {
@@ -21,7 +29,7 @@
   cursor: pointer;
   width: 222px;
   height: 71px;
-  opacity: 0.9;
+  opacity: 0.6;
 
   font-weight: normal;
   font-size: 12px;
@@ -34,6 +42,8 @@
 .white-btn:hover,
 .white-btn:focus {
   opacity: 1;
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
 /* =============btn toTop================= */
@@ -46,6 +56,8 @@
   border: none;
   outline: none;
   background-color: #8d8d8d;
+  opacity: 0.6;
+
   font-style: bold;
   color: white;
   cursor: pointer;
@@ -54,5 +66,8 @@
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  opacity: 1;
+  background-color: #555;
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
